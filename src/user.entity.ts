@@ -11,24 +11,24 @@ export class User {
     @Column()
     lastName: string;
 
-    @Column({ default: true })
+    @Column({ nullable: true })
     email: string;
 
-    @Column({ default: true })
+    @Column({ nullable: true })
     phone: string;
 
-    @Column({ default: true })
+    @Column({ nullable: true })
     address: string;
 
-    @Column({ default: true })
+    @Column()
     city: string;
 
-    @Column({ default: true })
+    @Column({ nullable: true })
     state: string;
 
-    @Column({ default: true })
+    @Column({ nullable: true })
     zip: string;
 
-    @Column({ default: true })
+    @Column({ nullable: true })
     isActive: boolean;
 }
